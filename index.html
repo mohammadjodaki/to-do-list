@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/output.css">
+    <title>TO DO LIST</title>
+</head>
+<body>
+    <section class="group w-[150px] h-[150px] md:w-[200px] md:h-[200px] fixed z-50 bottom-0 right-0">
+        <figure class="w-[120px] h-[120px] md:w-[170px] md:h-[170px] fixed bottom-1 right-1">
+          <img class="w-full h-full relative rounded-full cursor-pointer shadow-[0px_0px_64px_21px_#2b6cb0]" src="img/profile.JPG" alt="">
+          <a class="hidden hover:text-orange-500 group-hover:flex group-hover:right-32 md:group-hover:right-44 duration-500 group-hover:top-[5px] md:group-hover:top-[10px] text-xl md:text-3xl absolute right-24 top-36" href="https://instagram.com/mohammad_jodaki_web"><i class="fa-brands fa-square-instagram"></i></a>
+          <a class="hidden hover:text-orange-500 group-hover:flex group-hover:right-32 md:group-hover:right-44 duration-500 group-hover:top-[35px] md:group-hover:top-[50px] text-xl md:text-3xl absolute right-24 top-36" href="https://www.linkedin.com/in/mohammad-jodaki"><i class="fa-brands fa-linkedin"></i></a>
+          <a class="hidden hover:text-orange-500 group-hover:flex group-hover:right-32 md:group-hover:right-44 duration-500 group-hover:top-[65px] md:group-hover:top-[90px] text-xl md:text-3xl absolute right-24 top-36" href="https://github.com/mohammadjodaki"><i class="fa-brands fa-square-github"></i></a>
+          <a class="hidden hover:text-orange-500 group-hover:flex group-hover:right-32 md:group-hover:right-44 duration-500 group-hover:top-[95px] md:group-hover:top-[130px] text-xl md:text-3xl absolute right-24 top-36" href="#"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+        </figure>
+      </section>
+    <section>
+        <div class="w-full grid grid-cols-12 m-auto p-2 md:p-12">
+            <form class="col-span-12 lg:col-span-3 border-2 border-yellow-500">
+                <input class="w-4/5 m-7 p-3 outline-none text-xl border-2 border-yellow-500" type="text" id="titleInp" placeholder="Title">
+                <textarea class="w-4/5 h-64 p-3 m-7 outline-none text-xl border-2 border-yellow-500" id="descriptionInp" placeholder="Description"></textarea>
+                <button class="w-4/5 m-7 p-2 border-2 text-white border-yellow-100 rounded-lg bg-yellow-500" type="button" id="saveBtn">Save</button>
+            </form>
+            <div class="col-span-12 lg:col-span-9 py-2 px-10" id="List">
+                <div class="flex place-content-between font-bold">
+                    <p>Title</p>
+                    <p>Description</p>
+                    <p>Delete</p>
+                </div>
+                <hr class="m-5 p-0 border-yellow-500">
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://kit.fontawesome.com/9d6fbcc193.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
