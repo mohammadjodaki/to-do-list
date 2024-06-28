@@ -24,23 +24,24 @@ document.getElementById('saveBtn').addEventListener('click', () => {
             list.removeChild(item)
         })
         
-        let check_title = document.createElement('div')
-        check_title.classList.add('flex')
-        check_title.appendChild(checkbox)
-        check_title.appendChild(title)
-        check_title.addEventListener('click' , ()=>{
-            if (title.style.textDecoration === 'line-through' && description.style.textDecoration === 'line-through') {
-                title.style.textDecoration = 'none';
-                description.style.textDecoration = 'none'
-            } else {
+        let checktik = document.createElement('div')
+        checktik.classList.add('flex')
+        checktik.appendChild(checkbox)
+        checktik.appendChild(title)
+        checktik.addEventListener('click' , ()=>{
+            if (checkbox.checked) {
                 title.style.textDecoration = 'line-through';
                 description.style.textDecoration = 'line-through'
+
+            } else {
+                title.style.textDecoration = 'none';
+                description.style.textDecoration = 'none'
             }
-        })
+        });
         document.getElementById('titleInp').value = '';
         document.getElementById('descriptionInp').value = '';
 
-        item.appendChild(check_title)
+        item.appendChild(checktik)
         item.appendChild(description);
         item.appendChild(deleteButton);
 
